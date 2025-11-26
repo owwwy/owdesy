@@ -3,7 +3,7 @@ async function loadProjects() {
   if (!container) return;
 
   try {
-    const response = await fetch('project.json');
+    const response = await fetch('projects.json');
     if (!response.ok) {
       console.error('Не удалось загрузить projects.json', response.status);
       return;
