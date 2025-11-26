@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Олег Кротов — Портфолио</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <link rel="stylesheet" href="variable.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="portfolio-doc">
+    <!-- Профиль -->
+    <section class="portfolio-section portfolio-section--profile">
+      <aside class="portfolio-section__aside">
+        <article class="profile-card">
+          <header class="profile-card__header">
+            <img
+              class="profile-card__avatar"
+              src="https://placehold.co/40x40"
+              alt="Аватар"
+            />
+            <div class="profile-card__text">
+              <div class="profile-card__name">Олег Кротов</div>
+              <div class="profile-card__role">Дизайнер</div>
+            </div>
+          </header>
+
+          <div class="profile-card__meta">
+            <div class="profile-card__meta-item">23 года</div>
+            <div class="profile-card__meta-item">Ростов-на-Дону</div>
+          </div>
+        </article>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="intro">
+          <p class="intro__paragraph">
+            Проектирую интерфейсы цифровых продуктов и развиваю дизайн-системы.
+          </p>
+          <p class="intro__paragraph">
+            Для меня хорошие продукты — это баланс между экспертизой, эстетикой и простыми
+            исследованиями. Я глубоко ценю визуальную выразительность в цифровых продуктах,
+            но считаю, что она
+            <span class="intro__accent">
+              должна работать в пользу понятности и интуитивности.
+            </span>
+          </p>
+          <p class="intro__paragraph">
+            С подборкой относительно интересных визуальных кейсов можно ознакомиться в моём
+            <a class="intro__link" href="#" target="_blank" rel="noreferrer noopener">
+              Дипрофайл
+            </a>.
+            Связаться со мной проще и быстрее всего в
+            <a class="intro__link" href="#" target="_blank" rel="noreferrer noopener">
+              Телеграме
+            </a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section class="portfolio-section portfolio-section--projects">
+      <aside class="portfolio-section__aside">
+        <div class="portfolio-section__label">Проекты:</div>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="project-list" id="project-list">
+          <!-- карточки сюда подкинет JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Опыт -->
+    <section class="portfolio-section portfolio-section--experience">
+      <aside class="portfolio-section__aside">
+        <div class="portfolio-section__label">Опыт работы:</div>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="experience-list">
+          <article class="experience-item">
+            <header class="experience-item__header">
+              <div class="experience-item__company">Есть Идея!</div>
+              <div class="experience-item__site">isidea.ru</div>
+            </header>
+            <div class="experience-item__dates">
+              <span class="experience-item__date">26 июл 2022 г.</span>
+              <span class="experience-item__dash" aria-hidden="true"></span>
+              <span class="experience-item__date">сегодняшний день</span>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <header class="experience-item__header">
+              <div class="experience-item__company">Независимые проекты</div>
+            </header>
+            <div class="experience-item__dates">
+              <span class="experience-item__date">12 апр 2022</span>
+              <span class="experience-item__dash" aria-hidden="true"></span>
+              <span class="experience-item__date">26 июл 2022 г.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="portfolio-section portfolio-section--skills">
+      <aside class="portfolio-section__aside">
+        <div class="portfolio-section__label">Навыки:</div>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="skills-list">
+          <article class="skills-item">
+            <div class="skills-item__tags">
+              <span class="skills-tag">Figma</span>
+            </div>
+            <p class="skills-item__description">...</p>
+          </article>
+
+          <article class="skills-item">
+            <div class="skills-item__tags">
+              <span class="skills-tag">ChatGPT</span>
+            </div>
+            <p class="skills-item__description">
+              Генерирую реалистичный контент, уточняю формулировки и детали,
+              экономлю много времени.
+            </p>
+          </article>
+
+          <article class="skills-item">
+            <div class="skills-item__tags">
+              <span class="skills-tag">HTML</span>
+              <span class="skills-tag">CSS</span>
+            </div>
+            <p class="skills-item__description">
+              Передаю макеты, с которыми удобно работать: учитываю логику вёрстки,
+              структуру и нейминг — это зачастую ускоряет работу разработчиков.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Принципы -->
+    <section class="portfolio-section portfolio-section--principles">
+      <aside class="portfolio-section__aside">
+        <div class="portfolio-section__label">Принципы:</div>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="principles-list">
+          <article class="principle-item">
+            <h3 class="principle-item__title">Продукт прежде всего</h3>
+            <p class="principle-item__description">
+              Хороший интерфейс измеряется не качеством макета, а тем, как он ведёт себя в
+              реальной работе.
+            </p>
+          </article>
+
+          <article class="principle-item">
+            <h3 class="principle-item__title">Простота</h3>
+            <p class="principle-item__description">
+              «Лучший интерфейс — его отсутствие». Чем меньше барьеров между пользователем
+              и результатом, тем лучше решение.
+            </p>
+          </article>
+
+          <article class="principle-item">
+            <h3 class="principle-item__title">Детали</h3>
+            <p class="principle-item__description">
+              Качество проявляется в мелочах, а они формируют доверие, любовь и уровень
+              продукта.
+            </p>
+          </article>
+
+          <article class="principle-item">
+            <h3 class="principle-item__title">Командная работа</h3>
+            <p class="principle-item__description">
+              Дизайн — язык команды. Он должен быть понятен разработчикам, ценен бизнесу и
+              удобен пользователям.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="projects.js"></script>
+</body>
+</html>

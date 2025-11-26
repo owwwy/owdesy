@@ -1,0 +1,16 @@
+[
+  {
+    "image": "https://placehold.co/420x240",
+    "title": "Фреймворк UI-Kit",
+    "subtitle": "Модульная дизайн-система",
+    "link": "#fwui",
+    "tags": ["Design System", "B2B", "FWUI"]
+  },
+  {
+    "image": "https://placehold.co/420x240",
+    "title": "Подрядчик",
+    "subtitle": "Бизнес-портал для строителей и их клиентов",
+    "link": "#podryad",
+    "tags": ["B2B", "Сервис", "Строительство"]
+  }
+]
