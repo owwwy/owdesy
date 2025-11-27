@@ -19,6 +19,28 @@ p {
   margin: 0;
 }
 
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  fill: currentColor;
+}
+
+.intro__link--with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.intro__link {
+  color: var(--color-content-accent-heavy);
+  text-decoration: underline;
+}
+
+.intro__link:hover {
+  color: var(--color-content-accent-medium);
+}
+
 /* --------------------------------------------------
    DOCUMENT
 -------------------------------------------------- */
