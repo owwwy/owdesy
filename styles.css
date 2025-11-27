@@ -19,28 +19,6 @@ p {
   margin: 0;
 }
 
-.icon {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  fill: currentColor;
-}
-
-.intro__link--with-icon {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.intro__link {
-  color: var(--color-content-accent-heavy);
-  text-decoration: underline;
-}
-
-.intro__link:hover {
-  color: var(--color-content-accent-medium);
-}
-
 /* --------------------------------------------------
    DOCUMENT
 -------------------------------------------------- */
@@ -353,4 +331,66 @@ p {
   color: var(--color-content-body);
   font-size: var(--font-size);
   line-height: var(--line-height);
+}
+
+/* Контакты */
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-item__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.contact-item__title {
+  color: var(--color-content-display);
+  font-size: 15px;
+  font-weight: 550;
+  line-height: 22px;
+}
+
+.contact-item__note {
+  color: var(--color-content-caption);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.contact-item__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 1px 0;
+}
+
+.contact-item__url {
+  font-size: 15px;
+  line-height: 20px;
+  display: inline-flex;
+}
+
+.contact-item__muted {
+  color: var(--color-content-faint);
+}
+
+.contact-item__main {
+  color: var(--color-content-body);
+  text-decoration: underline;
+}
+
+/* Иконки */
+.icon-slot svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
