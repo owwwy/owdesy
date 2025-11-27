@@ -394,3 +394,37 @@ p {
   height: 20px;
   fill: currentColor;
 }
+
+/* Футер */
+
+.portfolio-footer {
+  width: 100%;
+  max-width: 640px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio-footer__aside {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.portfolio-footer__label {
+  color: var(--color-content-caption);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.portfolio-footer__content {
+  width: 420px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
