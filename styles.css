@@ -17,7 +17,7 @@ body {
   font-family: var(--font-family);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 p {
@@ -71,7 +71,7 @@ p {
   color: var(--neutral-500);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 /* --------------------------------------------------
@@ -112,14 +112,14 @@ p {
   color: var(--neutral-900);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .profile-card__role {
   color: var(--neutral-500);
   font-size: 14px;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 .profile-card__meta {
@@ -133,7 +133,7 @@ p {
   color: var(--neutral-500);
   font-size: 14px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 /* --------------------------------------------------
@@ -150,12 +150,12 @@ p {
   color: var(--neutral-600);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 .intro__accent {
   color: var(--neutral-800);
-  font-weight: 475;
+  font-weight: 425;
 }
 
 .intro__link {
@@ -204,7 +204,7 @@ p {
   color: var(--neutral-900);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .project-card__subtitle {
@@ -212,7 +212,7 @@ p {
   color: var(--neutral-600);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 /* --------------------------------------------------
@@ -243,14 +243,14 @@ p {
   color: var(--neutral-900);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .experience-item__site {
   color: var(--neutral-500);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 .experience-item__dates {
@@ -263,7 +263,7 @@ p {
   color: var(--neutral-800);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 .experience-item__dash {
@@ -299,7 +299,6 @@ p {
   padding: 4px 8px;
   background: var(--neutral-050);
 
-  /* было: border-heavy inset, заменил на примитив */
   box-shadow: 0 0 8px var(--neutral-200) inset;
 
   border-radius: 3px;
@@ -310,14 +309,14 @@ p {
   color: var(--neutral-900);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .skills-item__description {
   color: var(--neutral-600);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 /* --------------------------------------------------
@@ -341,7 +340,7 @@ p {
   color: var(--neutral-900);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .principle-item__description {
@@ -349,7 +348,7 @@ p {
   color: var(--neutral-600);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 /* --------------------------------------------------
@@ -378,14 +377,14 @@ p {
   color: var(--neutral-900);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .contact-item__note {
   color: var(--neutral-500);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 .contact-item__link {
@@ -444,7 +443,7 @@ p {
   color: var(--neutral-500);
   font-size: 15px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 350;
 }
 
 .portfolio-footer__content {
