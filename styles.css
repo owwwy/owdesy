@@ -410,10 +410,28 @@ p {
 }
 
 /* Icons */
-.icon-slot svg {
+.icon-slot {
   width: 20px;
   height: 20px;
-  fill: currentColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 20px;
+
+  /* цвет иконки берется отсюда через currentColor */
+  suggests: none;
+  color: var(--neutral-800);
+}
+
+.icon-slot .icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* если хочешь чтобы иконка менялась как ссылка */
+.contact-item__link:hover .icon-slot {
+  color: var(--neutral-900);
 }
 
 /* --------------------------------------------------
