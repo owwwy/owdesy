@@ -2,153 +2,280 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>owdesy</title>
+  <title>Олег Кротов — Портфолио</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Шрифт Onest -->
+  <meta name="color-scheme" content="dark light" />
+  <link rel="stylesheet" href="variable.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --color-bg: #F1EFEB;
-      --color-surface: #FFFFFF;
-      --color-text-main: rgba(0, 0, 0, 0.88);
-      --color-text-muted: rgba(0, 0, 0, 0.56);
-      --color-link: rgba(0, 0, 0, 0.80);
-    }
-
-    * ,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Onest", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 15px;
-      line-height: 22px;
-      background: var(--color-bg);
-      color: var(--color-text-main);
-      display: flex;
-      min-height: 100vh;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .page {
-      width: 100%;
-      max-width: 680px;
-      padding-inline: 20px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .stub {
-      width: 100%;
-      padding: 140px 110px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .stub__card {
-      width: 100%;
-      max-width: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .stub__image {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      display: block;
-      border-radius: 4px;
-    }
-
-    .stub__content {
-      width: 100%;
-      max-width: 280px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .stub__text {
-      margin: 0;
-      text-align: center;
-    }
-
-    .stub__text-strong {
-      font-weight: 500;
-      color: var(--color-text-main);
-    }
-
-    .stub__text-muted {
-      font-weight: 400;
-      color: var(--color-text-muted);
-    }
-
-    .stub__link-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-
-    .stub__link {
-      text-align: center;
-      color: var(--color-link);
-      text-decoration: underline;
-      font-size: 15px;
-      line-height: 22px;
-    }
-
-    .stub__link:hover {
-      opacity: 0.8;
-    }
-
-    @media (max-width: 720px) {
-      .stub {
-        padding: 80px 20px;
-      }
-
-      .stub__card {
-        max-width: 100%;
-      }
-
-      .stub__image {
-        height: auto;
-        aspect-ratio: 7 / 4;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="page">
-    <main class="stub" aria-labelledby="stub-title">
-      <section class="stub__card">
-        <img
-          class="stub__image"
-          src="dev.png"
-          alt="dev"
-          aria-hidden="true"
-        />
+  <div class="portfolio-doc">
+    <!-- Профиль -->
+    <section class="portfolio-section portfolio-section--profile">
+      <aside class="portfolio-section__aside">
+        <article class="profile-card">
+          <header class="profile-card__header">
+            <img
+              class="profile-card__avatar"
+              src="https://placehold.co/40x40"
+              alt="Аватар"
+            />
+            <div class="profile-card__text">
+              <div class="profile-card__name">Олег Кротов</div>
+              <div class="profile-card__role">Дизайнер</div>
+            </div>
+          </header>
 
-        <div class="stub__content">
-          <p class="stub__text" id="stub-title">
-            <span class="stub__text-strong">Пусто. </span>
-            <span class="stub__text-muted">
-              Идёт разработка
+          <div class="profile-card__meta">
+            <div class="profile-card__meta-item">23 года</div>
+            <div class="profile-card__meta-item">Ростов-на-Дону</div>
+          </div>
+        </article>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="intro">
+          <p class="intro__paragraph">
+            Проектирую интерфейсы цифровых продуктов и развиваю дизайн-системы.
+          </p>
+          <p class="intro__paragraph">
+            Для меня хорошие продукты — это баланс между экспертизой, эстетикой и простыми
+            исследованиями. Я глубоко ценю визуальную выразительность в цифровых продуктах,
+            но считаю, что она
+            <span class="intro__accent">
+              должна работать в пользу понятности и интуитивности.
             </span>
           </p>
+          <p class="intro__paragraph">
+            С подборкой относительно интересных визуальных кейсов можно ознакомиться в моём
+            <a class="intro__link" href="#" target="_blank" rel="noreferrer noopener">
+              Дипрофайл
+            </a>.
+            Связаться со мной проще и быстрее всего в
+            <a class="intro__link" href="#" target="_blank" rel="noreferrer noopener">
+              Телеграме
+            </a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проекты -->
+    <section class="portfolio-section portfolio-section--projects">
+      <aside class="portfolio-section__aside">
+        <div class="portfolio-section__label">Проекты:</div>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="project-list" id="project-list">
+          <!-- карточки сюда подкинет JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Опыт -->
+    <section class="portfolio-section portfolio-section--experience">
+      <aside class="portfolio-section__aside">
+        <div class="portfolio-section__label">Опыт работы:</div>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="experience-list">
+          <article class="experience-item">
+            <header class="experience-item__header">
+              <div class="experience-item__company">Есть Идея!</div>
+              <div class="experience-item__site">isidea.ru</div>
+            </header>
+            <div class="experience-item__dates">
+              <span class="experience-item__date">26 июл 2022 г.</span>
+              <span class="experience-item__dash" aria-hidden="true"></span>
+              <span class="experience-item__date">сегодняшний день</span>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <header class="experience-item__header">
+              <div class="experience-item__company">Независимые проекты</div>
+            </header>
+            <div class="experience-item__dates">
+              <span class="experience-item__date">12 апр 2022</span>
+              <span class="experience-item__dash" aria-hidden="true"></span>
+              <span class="experience-item__date">26 июл 2022 г.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="portfolio-section portfolio-section--skills">
+      <aside class="portfolio-section__aside">
+        <div class="portfolio-section__label">Навыки:</div>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="skills-list">
+          <article class="skills-item">
+            <div class="skills-item__tags">
+              <span class="skills-tag">Figma</span>
+            </div>
+            <p class="skills-item__description">...</p>
+          </article>
+
+          <article class="skills-item">
+            <div class="skills-item__tags">
+              <span class="skills-tag">ChatGPT</span>
+            </div>
+            <p class="skills-item__description">
+              Генерирую реалистичный контент, уточняю формулировки и детали,
+              экономлю много времени.
+            </p>
+          </article>
+
+          <article class="skills-item">
+            <div class="skills-item__tags">
+              <span class="skills-tag">HTML</span>
+              <span class="skills-tag">CSS</span>
+            </div>
+            <p class="skills-item__description">
+              Передаю макеты, с которыми удобно работать: учитываю логику вёрстки,
+              структуру и нейминг — это зачастую ускоряет работу разработчиков.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Принципы -->
+    <section class="portfolio-section portfolio-section--principles">
+      <aside class="portfolio-section__aside">
+        <div class="portfolio-section__label">Принципы:</div>
+      </aside>
+
+      <div class="portfolio-section__content">
+        <div class="principles-list">
+          <article class="principle-item">
+            <h3 class="principle-item__title">Продукт прежде всего</h3>
+            <p class="principle-item__description">
+              Хороший интерфейс измеряется не качеством макета, а тем, как он ведёт себя в
+              реальной работе.
+            </p>
+          </article>
+
+          <article class="principle-item">
+            <h3 class="principle-item__title">Простота</h3>
+            <p class="principle-item__description">
+              «Лучший интерфейс — его отсутствие». Чем меньше барьеров между пользователем
+              и результатом, тем лучше решение.
+            </p>
+          </article>
+
+          <article class="principle-item">
+            <h3 class="principle-item__title">Детали</h3>
+            <p class="principle-item__description">
+              Качество проявляется в мелочах, а они формируют доверие, любовь и уровень
+              продукта.
+            </p>
+          </article>
+
+          <article class="principle-item">
+            <h3 class="principle-item__title">Командная работа</h3>
+            <p class="principle-item__description">
+              Дизайн — язык команды. Он должен быть понятен разработчикам, ценен бизнесу и
+              удобен пользователям.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio-section portfolio-section--contacts">
+        <aside class="portfolio-section__aside">
+          <div class="portfolio-section__label">Контакты:</div>
+        </aside>
+
+        <div class="portfolio-section__content">
+          <div class="contacts-list">
+
+            <!-- Телеграм -->
+            <article class="contact-item">
+              <div class="contact-item__header">
+                <span class="contact-item__title">Телеграм</span>
+                <span class="contact-item__note">— основной способ связи</span>
+              </div>
+
+              <a href="https://t.me/owdesy"
+                class="contact-item__link intro__link--with-icon"
+                target="_blank"
+                rel="noreferrer noopener">
+
+                <span class="icon-slot" data-icon="media/icons/socials/tg.svg"></span>
+
+                <span class="contact-item__url">
+                  <span class="contact-item__muted">t.me/</span>
+                  <span class="contact-item__main">owdesy</span>
+                </span>
+              </a>
+            </article>
+
+            <!-- Дипрофайл -->
+            <article class="contact-item">
+              <div class="contact-item__header">
+                <span class="contact-item__title">Дипрофайл</span>
+                <span class="contact-item__note">— визуальные кейсы</span>
+              </div>
+
+              <a href="https://dprofile.ru/owdesy"
+                class="contact-item__link intro__link--with-icon"
+                target="_blank"
+                rel="noreferrer noopener">
+
+                <span class="icon-slot" data-icon="media/icons/socials/dp.svg"></span>
+
+                <span class="contact-item__url">
+                  <span class="contact-item__muted">dprofile.ru/</span>
+                  <span class="contact-item__main">owdesy</span>
+                </span>
+              </a>
+            </article>
+
+            <!-- VK -->
+            <article class="contact-item">
+              <div class="contact-item__header">
+                <span class="contact-item__title">Вконтакте</span>
+              </div>
+
+              <a href="https://vk.com/owdesy"
+                class="contact-item__link intro__link--with-icon"
+                target="_blank"
+                rel="noreferrer noopener">
+
+                <span class="icon-slot" data-icon="media/icons/socials/vk.svg"></span>
+
+                <span class="contact-item__url">
+                  <span class="contact-item__muted">vk.com/</span>
+                  <span class="contact-item__main">owdesy</span>
+                </span>
+              </a>
+            </article>
+
+          </div>
         </div>
       </section>
-    </main>
+      <footer class="portfolio-footer">
+        <div class="portfolio-footer__aside">
+          <div class="portfolio-footer__label">© owdesy, 2025</div>
+        </div>
+
+        <div class="portfolio-footer__content">
+          <!-- Пока пусто — оставляем на будущее -->
+        </div>
+      </footer>
+
   </div>
+  <script src="projects.js"></script>
+  <script src="icons-loader.js"></script>
 </body>
 </html>
