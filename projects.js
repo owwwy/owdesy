@@ -16,21 +16,8 @@ async function loadProjects() {
         image,
         title,
         subtitle,
-        link,
-        tags = []
+        link
       } = project;
-
-      const tagsHtml = tags.length
-        ? `
-          <div class="project-card__tags">
-            ${tags
-              .map(
-                (tag) => `<span class="project-card__tag">${tag}</span>`
-              )
-              .join('')}
-          </div>
-        `
-        : '';
 
       const cardHtml = `
         <article class="project-card">
@@ -49,7 +36,6 @@ async function loadProjects() {
           <div class="project-card__body">
             <h3 class="project-card__title">${title}</h3>
             <p class="project-card__subtitle">${subtitle}</p>
-            ${tagsHtml}
           </div>
         </article>
       `;
