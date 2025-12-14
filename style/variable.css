@@ -12,9 +12,14 @@
   --neutral-450: #82858A;
   --neutral-400: #919497;
   --neutral-300: #C0C1C3;
-  --neutral-200: #D9DADC;
-  --neutral-150: #E6E6E9;
+  --neutral-200: #DBD9D5;
+  --neutral-150: #E5E3DF;
   --neutral-100: #ECE9E3;
   --neutral-050: #F1EFEB;
   --neutral-000: #FFFFFF;
+
+  /* animate */
+  --ease-decelerate: cubic-bezier(0, 0, 0.15, 1);
+  --ease-accelerate: cubic-bezier(0.5, 0, 1, 1);
+  --ease-standard: cubic-bezier(0.5, 0, 0.15, 1);
 }

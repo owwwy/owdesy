@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg">
   <link rel="stylesheet" href="style/variable.css" />
-  <link rel="stylesheet" href="style/styles.css" />
+  <link rel="stylesheet" href="style/main.css" />
+  <link rel="stylesheet" href="style/pages/index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
@@ -61,7 +62,7 @@
 
       <div class="portfolio-section__content">
         <div class="project-list" id="project-list">
-          <!-- карточки сюда подкинет JS -->
+          <!-- айтемы сюда подкинет JS -->
         </div>
       </div>
     </section>
@@ -73,29 +74,8 @@
       </aside>
 
       <div class="portfolio-section__content">
-        <div class="experience-list">
-          <article class="experience-item">
-            <header class="experience-item__header">
-              <div class="experience-item__company">Есть Идея!</div>
-              <div class="experience-item__site">isidea.ru</div>
-            </header>
-            <div class="experience-item__dates">
-              <span class="experience-item__date">26 июл 2022 г.</span>
-              <span class="experience-item__dash" aria-hidden="true"></span>
-              <span class="experience-item__date">сегодняшний день</span>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <header class="experience-item__header">
-              <div class="experience-item__company">Независимые проекты</div>
-            </header>
-            <div class="experience-item__dates">
-              <span class="experience-item__date">12 апр 2022</span>
-              <span class="experience-item__dash" aria-hidden="true"></span>
-              <span class="experience-item__date">26 июл 2022 г.</span>
-            </div>
-          </article>
+        <div class="experience-list" id="experience-list">
+          <!-- айтемы сюда подкинет JS -->
         </div>
       </div>
     </section>
@@ -107,34 +87,8 @@
       </aside>
 
       <div class="portfolio-section__content">
-        <div class="skills-list">
-          <article class="skills-item">
-            <div class="skills-item__tags">
-              <span class="skills-tag">Figma</span>
-            </div>
-            <p class="skills-item__description">...</p>
-          </article>
-
-          <article class="skills-item">
-            <div class="skills-item__tags">
-              <span class="skills-tag">ChatGPT</span>
-            </div>
-            <p class="skills-item__description">
-              Генерирую реалистичный контент, уточняю формулировки и детали,
-              экономлю много времени.
-            </p>
-          </article>
-
-          <article class="skills-item">
-            <div class="skills-item__tags">
-              <span class="skills-tag">HTML</span>
-              <span class="skills-tag">CSS</span>
-            </div>
-            <p class="skills-item__description">
-              Передаю макеты, с которыми удобно работать: учитываю логику вёрстки,
-              структуру и нейминг — это зачастую ускоряет работу разработчиков.
-            </p>
-          </article>
+        <div class="skills-list" id="skills-list">
+          <!-- навыки прилетят из JS -->
         </div>
       </div>
     </section>
@@ -146,38 +100,8 @@
       </aside>
 
       <div class="portfolio-section__content">
-        <div class="principles-list">
-          <article class="principle-item">
-            <h3 class="principle-item__title">Продукт прежде всего</h3>
-            <p class="principle-item__description">
-              Хороший интерфейс измеряется не качеством макета, а тем, как он ведёт себя в
-              реальной работе.
-            </p>
-          </article>
-
-          <article class="principle-item">
-            <h3 class="principle-item__title">Простота</h3>
-            <p class="principle-item__description">
-              «Лучший интерфейс — его отсутствие». Чем меньше барьеров между пользователем
-              и результатом, тем лучше решение.
-            </p>
-          </article>
-
-          <article class="principle-item">
-            <h3 class="principle-item__title">Детали</h3>
-            <p class="principle-item__description">
-              Качество проявляется в мелочах, они формируют доверие, любовь и уровень
-              продукта.
-            </p>
-          </article>
-
-          <article class="principle-item">
-            <h3 class="principle-item__title">Командная работа</h3>
-            <p class="principle-item__description">
-              Дизайн — язык команды. Он должен быть понятен разработчикам, ценен бизнесу и
-              удобен пользователям.
-            </p>
-          </article>
+        <div class="principles-list" id="principles-list">
+          <!-- принципы прилетят из JS -->
         </div>
       </div>
     </section>
@@ -187,6 +111,9 @@
   </div>
 
   <script src="scripts/projects.js"></script>
+  <script src="scripts/experience.js"></script>
+  <script src="scripts/skills.js"></script>
+  <script src="scripts/principles.js"></script>
 
   <script src="scripts/icons.js"></script>
   <script src="scripts/modules.js"></script>

@@ -1,0 +1,200 @@
+/* main.css */
+/* --------------------------------------------------
+   BASE
+-------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background: var(--neutral-050);
+  color: var(--neutral-600);
+
+  font-family: var(--font-family);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 350;
+}
+
+p {
+  margin: 0;
+}
+
+/* --------------------------------------------------
+   DOCUMENT
+-------------------------------------------------- */
+
+.portfolio-doc {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  padding-inline: 20px;
+
+  background: var(--neutral-050);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------------------------------------------------
+   SECTION TEMPLATE (200px aside + 420px content)
+-------------------------------------------------- */
+
+.portfolio-section {
+  width: 100%;
+  max-width: 640px;
+  padding-top: 64px;
+  padding-bottom: 48px;
+
+  border-bottom: 1px solid var(--neutral-150);
+
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio-section__aside {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.portfolio-section__content {
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.portfolio-section__label {
+  color: var(--neutral-500);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 350;
+}
+
+/* --------------------------------------------------
+   CONTACTS
+-------------------------------------------------- */
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-item__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.contact-item__title {
+  color: var(--neutral-900);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.contact-item__note {
+  color: var(--neutral-500);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 350;
+}
+
+.contact-item__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 1px 0;
+}
+
+.contact-item__url {
+  font-size: 15px;
+  line-height: 20px;
+  display: inline-flex;
+}
+
+.contact-item__muted {
+  color: var(--neutral-450);
+}
+
+.contact-item__main {
+  color: var(--neutral-800);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------
+   ICONS
+-------------------------------------------------- */
+
+.icon-slot {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 20px;
+
+  /* цвет иконки берется отсюда через currentColor */
+  color: var(--neutral-800);
+}
+
+.icon-slot .icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* если хочешь чтобы иконка менялась как ссылка */
+.contact-item__link:hover .icon-slot {
+  color: var(--neutral-900);
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+.portfolio-footer {
+  width: 100%;
+  max-width: 640px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio-footer__aside {
+  width: 200px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.portfolio-footer__label {
+  color: var(--neutral-500);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 350;
+}
+
+.portfolio-footer__content {
+  width: 420px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
