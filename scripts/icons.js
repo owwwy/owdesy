@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', async () => {
+window.loadIcons = async function loadIcons() {
   const placeholders = document.querySelectorAll('[data-icon]');
-  const cache = new Map();
+  const cache = window.__iconCache || (window.__iconCache = new Map());
 
   for (const placeholder of placeholders) {
+    // если уже обработано — пропускаем
+    if (placeholder.dataset.iconLoaded === '1') continue;
+
     const url = placeholder.getAttribute('data-icon');
     if (!url) continue;
 
@@ -23,7 +26,6 @@ document.addEventListener('DOMContentLoaded', async () => {
       const svg = doc.querySelector('svg');
       if (!svg) continue;
 
-      // размеры убираем — будет рулить CSS
       svg.removeAttribute('width');
       svg.removeAttribute('height');
 
@@ -31,17 +33,23 @@ document.addEventListener('DOMContentLoaded', async () => {
       svg.setAttribute('aria-hidden', 'true');
       svg.setAttribute('focusable', 'false');
 
-      // фикс фиолетового: если в файле fill="#AF52DE", прибиваем к currentColor
       svg.querySelectorAll('[fill]').forEach((n) => {
         const val = n.getAttribute('fill');
         if (val && val !== 'none') n.setAttribute('fill', 'currentColor');
       });
 
-      // чистим placeholder и вставляем svg внутрь
       placeholder.innerHTML = '';
       placeholder.appendChild(svg);
+
+      // помечаем как обработанный
+      placeholder.dataset.iconLoaded = '1';
     } catch (err) {
       console.error('Ошибка при загрузке иконки:', url, err);
     }
   }
+};
+
+// авто-запуск для иконок в самой странице
+document.addEventListener('DOMContentLoaded', () => {
+  window.loadIcons();
 });

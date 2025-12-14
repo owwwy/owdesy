@@ -1,14 +1,14 @@
 [
   {
-    "image": "https://placehold.co/420x240",
+    "image": "media/image/projects/fwui.png",
     "title": "Фреймворк UI-Kit",
     "subtitle": "Модульная дизайн-система",
-    "link": "#fwui",
+    "link": "#fwui"
   },
   {
-    "image": "https://placehold.co/420x240",
+    "image": "media/image/projects/podryado.png",
     "title": "Подрядчик",
     "subtitle": "Бизнес-портал для строителей и их клиентов",
-    "link": "#podryad",
+    "link": "#podryad"
   }
 ]
