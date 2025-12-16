@@ -3,20 +3,17 @@
   --font-family: Onest;
 
   /* palette */
-  --neutral-900: #151B21;
-  --neutral-850: #282D33;
-  --neutral-800: #343C44;
-  --neutral-700: #454B54;
-  --neutral-600: #5D6268;
-  --neutral-500: #686D74;
-  --neutral-450: #82858A;
-  --neutral-400: #919497;
-  --neutral-300: #C0C1C3;
-  --neutral-200: #DBD9D5;
-  --neutral-150: #E5E3DF;
-  --neutral-100: #ECE9E3;
-  --neutral-050: #F1EFEB;
-  --neutral-000: #FFFFFF;
+  --neutral-900: #212221FF;
+  --neutral-800: #383937FF;
+  --neutral-700: #4F504EFF;
+  --neutral-600: #666764FF;
+  --neutral-500: #7E7E7BFF;
+  --neutral-450: #959591FF;
+  --neutral-400: #ACACA8FF;
+  --neutral-300: #C3C2BEFF;
+  --neutral-200: #DAD9D5FF;
+  --neutral-100: #ECE9E3FF;
+  --neutral-000: #F1EFEB;
 
   /* animate */
   --ease-decelerate: cubic-bezier(0, 0, 0.15, 1);

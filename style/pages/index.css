@@ -108,7 +108,7 @@
 .project-card__image-wrapper {
   border-radius: 3px;
   background: var(--neutral-100);
-  border: 1px solid var(--neutral-150);
+  border: 1px solid var(--neutral-200);
   overflow: hidden;
 
   transition:
@@ -118,7 +118,7 @@
 }
 
 .project-card:hover .project-card__image-wrapper {
-  background-color: var(--neutral-150);
+  background-color: var(--neutral-100);
   border-color: var(--neutral-200);
 }
 
@@ -214,7 +214,7 @@
   flex: 0 0 14px;
   margin-top: 11px;
   margin-bottom: 10px;
-  border-bottom: 1px solid var(--neutral-450);
+  border-bottom: 1px solid var(--neutral-500);
 }
 
 /* --------------------------------------------------

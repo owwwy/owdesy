@@ -12,7 +12,7 @@
 body {
   margin: 0;
 
-  background: var(--neutral-050);
+  background: var(--neutral-000);
   color: var(--neutral-600);
 
   font-family: var(--font-family);
@@ -25,6 +25,19 @@ p {
   margin: 0;
 }
 
+hr {
+  width: 100%;
+  height: 1px;
+
+  border: 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--neutral-200),
+    transparent
+  );
+}
+
 /* --------------------------------------------------
    DOCUMENT
 -------------------------------------------------- */
@@ -35,7 +48,7 @@ p {
   margin: 0 auto;
   padding-inline: 20px;
 
-  background: var(--neutral-050);
+  background: var(--neutral-000);
 
   display: flex;
   flex-direction: column;
@@ -51,9 +64,6 @@ p {
   max-width: 640px;
   padding-top: 64px;
   padding-bottom: 48px;
-
-  border-bottom: 1px solid var(--neutral-150);
-
   display: flex;
   gap: 20px;
 }
@@ -125,7 +135,7 @@ p {
 }
 
 .contact-item__muted {
-  color: var(--neutral-450);
+  color: var(--neutral-500);
 }
 
 .contact-item__main {
